@@ -1,77 +1,20 @@
 import Title from "../components/common/Title";
 import skillData from "../data/skillData";
+import { getImgUrl } from "../utils/getImageUrl";
 
 const Skills = () => {
-  const data = [
-    {
-      id: 0,
-      img: "html.pmg",
-      name: "HTML",
-    },
-    {
-      id: 1,
-      img: "css.pmg",
-      name: "CSS",
-    },
-    {
-      id: 2,
-      img: "js.pmg",
-      name: "JavaScript",
-    },
-    {
-      id: 3,
-      img: "figma.pmg",
-      name: "Figma",
-    },
-    {
-      id: 4,
-      img: "git.pmg",
-      name: "Git",
-    },
-    {
-      id: 5,
-      img: "mongo.pmg",
-      name: "Mongo",
-    },
-    {
-      id: 6,
-      img: "ex.pmg",
-      name: "Express",
-    },
-    {
-      id: 7,
-      img: "mui.pmg",
-      name: "Material UI",
-    },
-    {
-      id: 8,
-      img: "node.webp",
-      name: "Node.js",
-    },
-    {
-      id: 9,
-      img: "tail.png",
-      name: "Node.js",
-    },
-    {
-      id: 10,
-      img: "vercel.png",
-      name: "Vercel.js",
-    },
-    {
-      id: 11,
-      img: "redux.png",
-      name: "Redux.js",
-    },
-  ];
-  console.log('d', data);
+  const data = skillData.data;
+  console.log(data);
   return (
     <div>
-      <Title title={"skills"} />
-      <div>
-        {
-            data?.map(item=> <div key={item.id}>{item.name} </div>)
-        }
+      <Title title={"Skills"} />
+      <div className="mt-9 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-between gap-8">
+        {data?.map((item) => (
+          <div key={item.id}>
+            <img src={getImgUrl(item.img)} className=" hover:bg-transparent hover:w-[140px] hover:scale-100 hover:z-10 duration-300 cursor-pointer w-[140px] h-[140px] bg-white rounded-2xl p-2" alt="" />
+            <h4 className="flex justify-center mt-3">{item?.name}</h4>
+          </div>
+        ))}
       </div>
     </div>
   );

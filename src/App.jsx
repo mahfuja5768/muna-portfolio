@@ -9,7 +9,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 const App = () => {
-  const [page, setPage] = useState("About");
+  const [page, setPage] = useState("Skills");
   let content;
 
   if (page === "About") {
