@@ -13,6 +13,7 @@ export default {
         mediumYellow: "#ffdb70",
         lighterYellow: "#ffda70",
         darkYellow: "#ffbc5c",
+        textGray: '#d6d6d6'
       },
     },
   },

@@ -1,6 +1,6 @@
 
 const Resume = () => {
-    return <div>Resume</div>;
+    return <div>Resumee</div>;
 };
 
 export default Resume;

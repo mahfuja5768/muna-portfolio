@@ -1,53 +1,12 @@
-import { useState } from "react";
-import About from "../../pages/About";
-import Resume from "../../pages/Resume";
-import Skills from "../../pages/Skills";
+import Navbar from "../common/Navbar";
 
-const MainLayout = () => {
-  const [page, setPage] = useState("");
-  let content;
-  console.log(page);
-
-  if (page === "About") {
-    content = <About />;
-  }
-  if (page === "Resume") {
-    content = <Resume />;
-  }
-    if (page === "Skills") {
-      content = <Skills />;
-    }
+const MainLayout = ({page, setPage, content }) => {
   return (
-    // <div className="bg-mediumDark  rounded-2xl  border border-[#3e3e3e] p-12">
-    //   <div>
-    //     <ul>
-    //       <li className="" onClick={setPage("About")}>
-    //         About
-    //       </li>
-    //       <li className="" onClick={setPage("Resume")}>
-    //         Resume
-    //       </li>
-    //       <li className="" onClick={setPage("Skills")}>
-    //         Skills
-    //       </li>
-    //     </ul>
-    //   </div>
-    //   <div>{content}</div>
-    // </div>
-    <div className="bg-mediumDark  rounded-2xl  border border-[#3e3e3e] p-12">
-      <div>
-        <ul className=" flex gap-5">
-          <li className="">
-            <button onClick={() => setPage("About")}>About</button>
-          </li>
-          <li className="">
-            <button onClick={() => setPage("Resume")}>Resume</button>
-          </li>
-          <li className="">
-            <button onClick={() => setPage("Skills")}>Skills</button>
-          </li>
-        </ul>
+    <div className="bg-mediumDark  rounded-2xl  border border-[#3e3e3e] py-12 px-6 relative">
+      <div className="hidden md:top-0 md:right-0 h-[62px] rounded-bl-3xl absolute md:flex rounded-tr-2xl border border-[#3e3e3e] justify-center items-center px-8 bg-[#282829] ">
+        <Navbar page={page} setPage={setPage} />
       </div>
+
       <div>{content}</div>
     </div>
   );
