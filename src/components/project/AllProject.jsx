@@ -38,14 +38,22 @@ const AllProject = () => {
                 alt=""
               />
               <div className="flex items-center justify-between px-3 py-4 pb-5 ">
-                <h3 className=" text-2xl font-bold">
+                <h3 className="text-lg md:text-2xl font-bold">
                   {project?.title}
                 </h3>
                 <div className=" flex gap-7 justify-between">
-                  <a target="blank" href={project?.liveUrl} className=" font-bold">
+                  <a
+                    target="blank"
+                    href={project?.liveUrl}
+                    className=" font-bold"
+                  >
                     <FaExternalLinkAlt className=" hover:text-darkYellow text-lighterYellow" />
                   </a>
-                  <a target="blank" href={project?.github} className="font-bold">
+                  <a
+                    target="blank"
+                    href={project?.github}
+                    className="font-bold"
+                  >
                     <FaGithub className=" hover:text-darkYellow text-lighterYellow" />
                   </a>
                 </div>

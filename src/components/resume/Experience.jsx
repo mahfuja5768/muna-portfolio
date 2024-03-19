@@ -5,7 +5,7 @@ import { MdFileDownload } from "react-icons/md";
 
 const Experience = () => {
   return (
-    <section className="mb-8 mt-12 relative">
+    <section className="mb-8 md:mt-12 mt-6 relative">
       <div className=" flex items-center gap-3">
         <div className="bg-[#212122] rounded-xl border w-[48px] h-[48px] shadow-xl border-[#383838] flex justify-center items-center p-1">
           <TbCertificate className=" text-lg font-bold text-[#e6c668]" />
@@ -60,7 +60,7 @@ const Experience = () => {
           "https://drive.google.com/file/d/1P0IKSsi-cBsdy3f5A9HYXXk79795CE7u/view?usp=sharing"
         }
       >
-        <button className="text-[15px]  px-6 py-2  bg-gradient-to-b from-[#f3d700] border border-transparent hover:border hover:border-darkYellow hover:text-[#f3d700] hover:bg-none duration-300 text-black rounded-lg via-[#c79d00] to-[#906400] flex items-center justify-between gap-1">
+        <button className="md:text-[15px] text-[13px]  md:px-6 md:py-2  px-4 py-1 bg-gradient-to-b from-[#f3d700] border border-transparent hover:border hover:border-darkYellow hover:text-[#f3d700] hover:bg-none duration-300 text-black rounded-lg via-[#c79d00] to-[#906400] flex items-center justify-between gap-1">
           Resume{" "}
           <span>
             <MdFileDownload />

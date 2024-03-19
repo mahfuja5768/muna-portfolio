@@ -29,7 +29,7 @@ const App = () => {
   }
   return (
     <main>
-      <div className="my-16 max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 px-9">
+      <div className="md:my-16 my-8 max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 px-4 md:px-9">
         <div>
           <Sidebar />
         </div>
@@ -37,7 +37,7 @@ const App = () => {
           <MainLayout page={page} setPage={setPage} content={content} />
         </div>
       </div>
-      <div className="fixed z-10 backdrop-blur-md  md:hidden  bottom-0 left-0 right-0 h-[56px] rounded-t-2xl flex justify-center flex-wrap  items-center px-3 bg-[#34333455] ">
+      <div className="fixed z-10 backdrop-blur-md  md:hidden  bottom-0 left-0 right-0 h-[56px] rounded-t-2xl flex justify-center  items-center px-3 bg-[#34333455] ">
         <Navbar page={page} setPage={setPage} />
       </div>
     </main>

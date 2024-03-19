@@ -1,7 +1,7 @@
 const Navbar = ({ page, setPage }) => {
   const navs = ["About", "Resume", "Skills", "Projects", "Contact"];
   return (
-    <ul className=" flex justify-center items-center gap-8">
+    <ul className=" flex flex-wrap justify-center items-center gap-4 md:gap-8">
       {navs?.map((item) => (
         <li
           key={item}
