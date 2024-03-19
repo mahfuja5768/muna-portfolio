@@ -1,6 +1,13 @@
+import Title from "../components/common/Title";
+import AllProject from "../components/project/AllProject";
 
 const Projects = () => {
-    return <div>Projectes</div>;
+  return (
+    <section>
+      <Title title={"My Projects"} />
+      <AllProject />
+    </section>
+  );
 };
 
 export default Projects;

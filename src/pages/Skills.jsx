@@ -4,7 +4,6 @@ import { getImgUrl } from "../utils/getImageUrl";
 
 const Skills = () => {
   const data = skillData.data;
-  console.log(data);
   return (
     <div>
       <Title title={"Skills"} />
