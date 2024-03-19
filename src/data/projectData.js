@@ -21,6 +21,16 @@ const data = [
   },
   {
     id: 3,
+    title: "Task-Pulse",
+    about:
+      "Organize your tasks easily by dragging and dropping them into different categories, such as Ongoing or Completed. Enjoy a flexible and intuitive workflow. Whether it's changing due dates, modifying details, or adjusting priorities, editing tasks is a breeze.",
+    tech: "React, Nodejs, Express.js, Tailwind, Jwt, Firebase",
+    img: "task.png",
+    liveUrl: "https://task-pulse-12.netlify.app/",
+    github: "https://github.com/mahfuja5768/task-pulse-client",
+  },
+  {
+    id: 4,
     title: "Foodie Pal",
     about:
       "The homepage features a navbar with Framer Motion, a banner, top foods, and a footer. Users, when logged in, can add, purchase, update, and delete food items via the navbar. The all foods page displays categorized foods, and on the details page, users can order and add items to their added-food section, where they manage purchases, additions, updates, and deletions.",
@@ -29,16 +39,7 @@ const data = [
     liveUrl: "https://foodie-pal-client.vercel.app",
     github: "https://github.com/mahfuja5768/Foodipal-client",
   },
-  {
-    id: 4,
-    title: "Mindful-Moments",
-    about:
-      "Mindful Moments, a MERN stack blog website, allows users to seamlessly store, manage, and interact with blog data, offering features like adding, deleting blogs, posting reviews, and creating user accounts, all backed by MongoDB.",
-    tech: " Node.js, JWT , MongoDB, NPM, Router ,React.js, Express.js, , Tailwind, Firebase",
-    img: "mindful.png",
-    liveUrl: "https://mindful-moments-a.netlify.app",
-    github: "https://github.com/mahfuja5768/Mindful-Moments-Client",
-  },
+
   {
     id: 5,
     title: "Music-Amplitudein",
@@ -51,6 +52,26 @@ const data = [
   },
   {
     id: 6,
+    title: "Miro",
+    about:
+      "This is a HTML CSS landing page. Here I apply only html, css, and javascript. I use javascript for the responsive navbar.",
+    tech: "React.js, Tailwind CSS",
+    img: "Miro.png",
+    liveUrl: "https://miro-m.netlify.app/",
+    github: "https://github.com/mahfuja5768/miro",
+  },
+  {
+    id: 7,
+    title: "Movie-Magic-Tickets",
+    about:
+      "There is a banner, all movies sections, a footer. When hover on a movie card user can see short details and a show details button.By clicking on show details button will redirect to the movie details page . There are two button one if for official page and other is for buying ticket . By clicking on the buy ticket button user can buy any ticket.",
+    tech: "React, Tailwind CSS",
+    img: "movie.png",
+    liveUrl: "https://movie-magic-tickets.netlify.app/",
+    github: "https://github.com/mahfuja5768/Movie-Magic-Tickets",
+  },
+  {
+    id: 8,
     title: "Nexcent",
     about:
       "This is a HTML CSS landing page. Here I apply only html, css, and javascript. I use javascript for the responsive navbar.",
@@ -58,6 +79,16 @@ const data = [
     img: "nextcent.png",
     liveUrl: "https://mahfuja5768.github.io/Nexcent",
     github: "https://github.com/mahfuja5768/Nexcent",
+  },
+  {
+    id: 9,
+    title: "Mindful-Moments",
+    about:
+      "Mindful Moments, a MERN stack blog website, allows users to seamlessly store, manage, and interact with blog data, offering features like adding, deleting blogs, posting reviews, and creating user accounts, all backed by MongoDB.",
+    tech: " Node.js, JWT , MongoDB, NPM, Router ,React.js, Express.js, , Tailwind, Firebase",
+    img: "mindful.png",
+    liveUrl: "https://mindful-moments-a.netlify.app",
+    github: "https://github.com/mahfuja5768/Mindful-Moments-Client",
   },
 ];
 export default { data };

@@ -21,9 +21,6 @@ const SocialMedia = () => {
       <Link to="" className=" hover:text-white duration-300">
         <FaTwitter />
       </Link>
-      <Link to="" className=" hover:text-white duration-300">
-        <FaFacebook />
-      </Link>
     </div>
   );
 };

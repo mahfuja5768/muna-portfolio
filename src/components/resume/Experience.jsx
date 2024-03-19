@@ -1,19 +1,18 @@
 import { TbCertificate } from "react-icons/tb";
 import Title from "../common/Title";
 import "./EduStyle.css";
+import { MdFileDownload } from "react-icons/md";
 
 const Experience = () => {
   return (
-    <section className="my-8">
+    <section className="mb-8 mt-12 relative">
       <div className=" flex items-center gap-3">
         <div className="bg-[#212122] rounded-xl border w-[48px] h-[48px] shadow-xl border-[#383838] flex justify-center items-center p-1">
           <TbCertificate className=" text-lg font-bold text-[#e6c668]" />
         </div>
         <Title sTitle title={"Experience"} />
       </div>
-      <div className="w-1 h-full bg-gray-400 mr-4"></div>
-
-      <div className="time-line-area flex flex-col gap-12">
+      <div className="time-line-area flex flex-col gap-8">
         <div className="text-[15px] flex flex-col gap-1">
           <h3 className=" font-bold ">Self Learning</h3>
           <h3 className=" text-lighterYellow mt-1">July, 2023 - Present</h3>
@@ -54,6 +53,20 @@ const Experience = () => {
           </p>
         </div>
       </div>
+      <a
+        target="blank"
+        className=" absolute top-0 right-0 "
+        href={
+          "https://drive.google.com/file/d/1P0IKSsi-cBsdy3f5A9HYXXk79795CE7u/view?usp=sharing"
+        }
+      >
+        <button className="text-[15px]  px-6 py-2  bg-gradient-to-b from-[#f3d700] border border-transparent hover:border hover:border-darkYellow hover:text-[#f3d700] hover:bg-none duration-300 text-black rounded-lg via-[#c79d00] to-[#906400] flex items-center justify-between gap-1">
+          Resume{" "}
+          <span>
+            <MdFileDownload />
+          </span>
+        </button>
+      </a>
     </section>
   );
 };

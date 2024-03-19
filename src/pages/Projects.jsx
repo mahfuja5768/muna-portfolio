@@ -4,7 +4,7 @@ import AllProject from "../components/project/AllProject";
 const Projects = () => {
   return (
     <section>
-      <Title title={"My Projects"} />
+      <Title title={"Portfolio"} />
       <AllProject />
     </section>
   );

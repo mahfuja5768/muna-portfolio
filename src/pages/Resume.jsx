@@ -5,8 +5,8 @@ import SkillPercent from "../components/resume/SkillPercent";
 const Resume = () => {
   return (
     <div>
-      <Edu />
       <Experience />
+      <Edu />
       <SkillPercent />
     </div>
   );

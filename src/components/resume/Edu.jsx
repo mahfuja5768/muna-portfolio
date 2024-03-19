@@ -11,9 +11,8 @@ const Edu = () => {
         </div>
         <Title sTitle title={"Education"} />
       </div>
-      <div className="w-1 h-full bg-gray-400 mr-4"></div>
 
-      <div className="time-line-area flex flex-col gap-12">
+      <div className="time-line-area flex flex-col gap-8">
         <div className="text-[15px] flex flex-col gap-1">
           <h3 className=" font-bold ">Govt. Tolaram University College</h3>
           <h3 className=" text-lighterYellow mt-1">June, 2021 - present</h3>

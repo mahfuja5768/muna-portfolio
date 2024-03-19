@@ -1,7 +1,7 @@
 import Title from "./../common/Title";
 const SkillPercent = () => {
   return (
-    <section className="mt-16">
+    <section className="mt-28">
       <Title sTitle title={"My Skills"} />
       <div className="bg-[#202022] p-4 shadow-2xl border border-[#383838] rounded-2xl grid grid-cols-1 gap-6 lg:gap-10 mt-6">
         <div className="rounded shadow-2xl ">

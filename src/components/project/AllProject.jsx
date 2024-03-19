@@ -2,7 +2,6 @@ import { useState } from "react";
 import projectData from "../../data/projectData";
 import { getImgUrl } from "../../utils/getImageUrl";
 import SingleProject from "./SingleProject";
-import { Link } from "react-router-dom";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 
 const AllProject = () => {
@@ -35,7 +34,7 @@ const AllProject = () => {
             <div className="bg-[#202022] rounded-2xl">
               <img
                 src={getImgUrl(project?.img)}
-                className=" rounded-2xl h-[230px]"
+                className="w-full rounded-2xl md:h-[230px]"
                 alt=""
               />
               <div className="flex items-center justify-between px-3 py-4 pb-5 ">
@@ -43,12 +42,12 @@ const AllProject = () => {
                   {project?.title}
                 </h3>
                 <div className=" flex gap-7 justify-between">
-                  <Link to={project?.liveUrl} className=" font-bold">
+                  <a target="blank" href={project?.liveUrl} className=" font-bold">
                     <FaExternalLinkAlt className=" hover:text-darkYellow text-lighterYellow" />
-                  </Link>
-                  <Link to={project?.github} className="font-bold">
+                  </a>
+                  <a target="blank" href={project?.github} className="font-bold">
                     <FaGithub className=" hover:text-darkYellow text-lighterYellow" />
-                  </Link>
+                  </a>
                 </div>
               </div>
             </div>

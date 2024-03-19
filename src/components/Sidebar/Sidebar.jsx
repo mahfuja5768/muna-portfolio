@@ -6,7 +6,7 @@ import SocialMedia from "./SocialMedia";
 const Sidebar = () => {
   const [showContact, setShowContact] = useState(false);
   return (
-    <div className="bg-mediumDark  border relative border-[#3e3e3e] py-12 px-10 rounded-2xl ">
+    <div className="bg-mediumDark  border relative border-[#3e3e3e] py-12 px-4 rounded-2xl ">
       <div>
         <Profile />
       </div>
@@ -32,7 +32,7 @@ const Sidebar = () => {
       )}
 
       <button
-        className="lg:hidden text-[12px] h-[38px] border border-[#383838] hover:border-lighterYellow hover:border-r-transparent hover:border-t-transparent rounded-bl-2xl rounded-tr-xl absolute top-0 right-0 px-6 text-lighterYellow bg-gradient-to-b from-[#e9cb3414] to-[#222223] 
+        className="lg:hidden text-[12px] h-[38px] border border-[#383838] hover:border-lighterYellow hover:border-r-transparent duration-300 hover:border-t-transparent rounded-bl-2xl rounded-tr-xl absolute top-0 right-0 px-6 text-lighterYellow bg-gradient-to-b from-[#e9cb3414] to-[#222223] 
         hover:bg-gradient-to-b hover:from-[#e9cb342b] hover:to-[#222223] "
         onClick={() => setShowContact(!showContact)}
       >

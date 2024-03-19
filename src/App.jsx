@@ -9,7 +9,7 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 
 const App = () => {
-  const [page, setPage] = useState("Projects");
+  const [page, setPage] = useState("About");
   let content;
 
   if (page === "About") {
@@ -28,7 +28,7 @@ const App = () => {
     content = <Contact />;
   }
   return (
-    <main className="">
+    <main>
       <div className="my-16 max-w-[1200px] mx-auto grid grid-cols-1 lg:grid-cols-4 gap-6 px-9">
         <div>
           <Sidebar />
