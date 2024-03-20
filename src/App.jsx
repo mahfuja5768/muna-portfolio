@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Sidebar from "./components/Sidebar/Sidebar";
 import MainLayout from "./components/main/MainLayout";
 import Navbar from "./components/common/Navbar";
@@ -7,9 +7,18 @@ import Resume from "./pages/Resume";
 import Skills from "./pages/Skills";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
+import Loader from "./components/common/Loader";
 
 const App = () => {
   const [page, setPage] = useState("About");
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setLoading(false);
+    }, 2500);
+  });
+
   let content;
 
   if (page === "About") {
@@ -26,6 +35,10 @@ const App = () => {
   }
   if (page === "Contact") {
     content = <Contact />;
+  }
+
+  if (loading) {
+    return <Loader />;
   }
   return (
     <main>
