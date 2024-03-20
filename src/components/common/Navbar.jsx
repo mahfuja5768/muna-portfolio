@@ -5,7 +5,7 @@ const Navbar = ({ page, setPage }) => {
       {navs?.map((item) => (
         <li
           key={item}
-          className={` font-medium text-[15px] hover:text-lighterYellow ${
+          className={` font-semibold text-[15px] hover:text-lighterYellow  duration-300 ${
             page === item ? " text-lighterYellow duration-300" : ""
           }`}
         >

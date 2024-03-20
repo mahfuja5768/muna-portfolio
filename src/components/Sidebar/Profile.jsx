@@ -9,7 +9,7 @@ const Profile = () => {
           alt="ProfilePic"
         />
         <div>
-          <h2 className=" md:text-center text-xl mt-5 mb-3  font-semibold">
+          <h2 className=" md:text-center md:text-xl lg:text-2xl mt-5 mb-3  font-semibold">
             Mahfuja Ahasan
           </h2>
           <p className=" bg-[#2b2b2c] w-full sm:w-[152px] rounded-lg flex  justify-center text-[12px] py-1 px-4 mb-3">

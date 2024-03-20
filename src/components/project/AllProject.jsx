@@ -34,7 +34,7 @@ const AllProject = () => {
             <div className="bg-[#202022] rounded-2xl">
               <img
                 src={getImgUrl(project?.img)}
-                className="w-full rounded-2xl md:h-[230px]"
+                className="w-full rounded-2xl"
                 alt=""
               />
               <div className="flex items-center justify-between px-3 py-4 pb-5 ">

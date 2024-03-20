@@ -3,24 +3,23 @@ import { FaLinkedin, FaGithub, FaTwitter, FaFacebook } from "react-icons/fa";
 
 const SocialMedia = () => {
   return (
-    <div className="flex gap-5 text-gray-400 text-xl">
-      <Link
-        to="https://www.linkedin.com/in/ahasanmuna
+    <div className="flex justify-end gap-6 pr-2 text-gray-400 text-xl">
+      <a
+        title="blank"
+        href="https://www.linkedin.com/in/ahasanmuna
 "
         className=" hover:text-white duration-300"
       >
         <FaLinkedin />
-      </Link>
-      <Link
-        to="https://github.com/mahfuja5768 
+      </a>
+      <a
+        title="blank"
+        href="https://github.com/mahfuja5768 
 "
         className=" hover:text-white duration-300"
       >
         <FaGithub />
-      </Link>
-      <Link to="" className=" hover:text-white duration-300">
-        <FaTwitter />
-      </Link>
+      </a>
     </div>
   );
 };
