@@ -3,6 +3,7 @@ import projectData from "../../data/projectData";
 import { getImgUrl } from "../../utils/getImageUrl";
 import SingleProject from "./SingleProject";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
+import { motion } from "framer-motion";
 
 const AllProject = () => {
   const [showPortal, setShowPortal] = useState(false);
@@ -22,7 +23,7 @@ const AllProject = () => {
   return (
     <div>
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-9
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-24
       "
       >
         {data?.map((project) => (
@@ -31,10 +32,21 @@ const AllProject = () => {
             key={project?.id}
             className=" cursor-pointer"
           >
-            <div className="bg-[#202022] rounded-2xl">
-              <img
+            <motion.div
+              className="bg-[#202022] rounded-2xl"
+              initial={{ opacity: 0, y: -50 }}
+              whileInView={{
+                opacity: 1,
+                x: 0,
+                transition: {
+                  duration: 1,
+                },
+              }}
+            >
+              <motion.img
                 src={getImgUrl(project?.img)}
-                className="w-full rounded-2xl"
+                whileHover={{ scale: 1.05 }}
+                className="w-full rounded-2xl h-[230px]"
                 alt=""
               />
               <div className="flex items-center justify-between px-3 py-4 pb-5 ">
@@ -58,7 +70,7 @@ const AllProject = () => {
                   </a>
                 </div>
               </div>
-            </div>
+            </motion.div>
           </a>
         ))}
       </div>

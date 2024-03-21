@@ -2,6 +2,7 @@ import { TbCertificate } from "react-icons/tb";
 import Title from "../common/Title";
 import "./EduStyle.css";
 import { MdFileDownload } from "react-icons/md";
+import { motion } from "framer-motion";
 
 const Experience = () => {
   return (
@@ -10,6 +11,7 @@ const Experience = () => {
         <div className="bg-[#212122] rounded-xl border w-[48px] h-[48px] shadow-xl border-[#383838] flex justify-center items-center p-1">
           <TbCertificate className=" text-lg font-bold text-[#e6c668]" />
         </div>
+
         <Title sTitle title={"Experience"} />
       </div>
       <div className="time-line-area flex flex-col gap-8">
@@ -60,12 +62,16 @@ const Experience = () => {
           "https://drive.google.com/file/d/1DKQdPCZcIyLIU3MQx_6podjrva2IbBHi/view?usp=drive_link"
         }
       >
-        <button className="md:text-[15px] text-[13px]  md:px-6 md:py-2  px-4 py-1 bg-gradient-to-b from-[#f3d700] border border-transparent hover:border hover:border-darkYellow hover:text-[#f3d700] hover:bg-none duration-300 text-black rounded-lg via-[#c79d00] to-[#906400] flex items-center justify-between gap-1">
+        <motion.button
+          whileTap={{ scale: 0.5 }}
+          whileHover={{ scale: 1.1, transition: { yoyo: Infinity } }}
+          className="md:text-[15px] text-[13px]  md:px-6 md:py-2  px-4 py-1 bg-gradient-to-b from-[#f3d700] border border-transparent hover:border hover:border-darkYellow hover:text-[#f3d700] hover:bg-none duration-300 text-black rounded-lg via-[#c79d00] to-[#906400] flex items-center justify-between gap-1"
+        >
           Resume{" "}
           <span>
             <MdFileDownload />
           </span>
-        </button>
+        </motion.button>
       </a>
     </section>
   );

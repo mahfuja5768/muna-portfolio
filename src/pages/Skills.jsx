@@ -1,6 +1,7 @@
 import Title from "../components/common/Title";
 import skillData from "../data/skillData";
 import { getImgUrl } from "../utils/getImageUrl";
+import { motion } from "framer-motion";
 
 const Skills = () => {
   const data = skillData.data;
@@ -10,9 +11,10 @@ const Skills = () => {
       <div className="mt-9 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-between gap-8">
         {data?.map((item) => (
           <div key={item.id}>
-            <img
+            <motion.img
+              whileHover={{ scale: 1.1 }}
               src={getImgUrl(item.img)}
-              className=" w-full hover:bg-transparent md:hover:w-[140px] hover:scale-100 hover:z-10 duration-300 cursor-pointer md:w-[140px] md:h-[140px] bg-white rounded-2xl p-2"
+              className=" w-full  duration-300 cursor-pointer md:w-[140px] md:h-[140px] bg-white rounded-2xl p-2"
               alt=""
             />
             <h4 className="flex justify-center mt-3">{item?.name}</h4>

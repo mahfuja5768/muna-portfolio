@@ -30,7 +30,7 @@ const App = () => {
   if (page === "Skills") {
     content = <Skills />;
   }
-  if (page === "Projects") {
+  if (page === "Portfolio") {
     content = <Projects />;
   }
   if (page === "Contact") {

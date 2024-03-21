@@ -1,4 +1,5 @@
 import ProfilePic from "../../assets/muna copy.jpg";
+import { motion } from "framer-motion";
 const Profile = () => {
   return (
     <section>
@@ -9,9 +10,16 @@ const Profile = () => {
           alt="ProfilePic"
         />
         <div>
-          <h2 className=" md:text-center md:text-xl lg:text-2xl mt-5 mb-3  font-semibold">
-            Mahfuja Ahasan
-          </h2>
+          <motion.div
+            initial={{ opacity: 0, x: "-100vh" }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ type: "spring", duration: 2 }}
+          >
+            <h2 className=" md:text-center md:text-xl lg:text-2xl mt-5 mb-3  font-semibold">
+              Mahfuja Ahasan
+            </h2>
+          </motion.div>
+
           <p className=" bg-[#2b2b2c] w-full sm:w-[152px] rounded-lg flex  justify-center text-[12px] py-1 px-4 mb-3">
             Frontend Developer
           </p>
