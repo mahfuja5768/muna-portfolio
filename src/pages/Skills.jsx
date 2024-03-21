@@ -10,7 +10,7 @@ const Skills = () => {
       <Title title={"Skills"} />
       <div className="mt-9 grid grid-cols-2 md:grid-cols-4 lg:grid-cols-5 justify-between gap-8">
         {data?.map((item) => (
-          <div key={item.id}>
+          <div key={item.id} className="flex flex-col justify-center items-center">
             <motion.img
               whileHover={{ scale: 1.1 }}
               src={getImgUrl(item.img)}
