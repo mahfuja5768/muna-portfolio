@@ -10,7 +10,7 @@ const About = () => {
         <MyInfo />
       </motion.div>
       <Doing />
-      <PortfolioSlide />
+      {/* <PortfolioSlide /> */}
     </div>
   );
 };
