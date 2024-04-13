@@ -10,6 +10,16 @@ const data = [
     github: "https://github.com/mahfuja5768/Dream-property-Client",
   },
   {
+    id: 10,
+    title: "Yum Recipe",
+    about:
+      "Here I use functional components to the sections. I utilize React hooks for state management. Like in the navbar I manage the navs which will display or not in different devices through a state(showNav, setShowNav). I also make Recipe details page , filtered recipe by country , search recipe by name. The application is responsive as well. Here, I used MealDB (https://www.themealdb.com/api.php) for json data.",
+    tech: "This project is made by React.js, Tailwind CSS.",
+    img: "Yum-Recipe.png",
+    liveUrl: "https://yumrecipe-m.vercel.app/",
+    github: "https://github.com/mahfuja5768/yumrecipe?tab=readme-ov-file",
+  },
+  {
     id: 2,
     title: "Vogue-Verse-Apparel",
     about:
