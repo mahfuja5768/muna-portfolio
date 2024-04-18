@@ -1,5 +1,4 @@
-import { Link } from "react-router-dom";
-import { FaLinkedin, FaGithub, FaTwitter, FaFacebook } from "react-icons/fa";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 const SocialMedia = () => {
   return (
@@ -8,7 +7,7 @@ const SocialMedia = () => {
         title="blank"
         href="https://www.linkedin.com/in/ahasanmuna
 "
-        className=" hover:text-white duration-300"
+        className="text-primary hover:text-white duration-300"
       >
         <FaLinkedin />
       </a>
@@ -16,7 +15,7 @@ const SocialMedia = () => {
         title="blank"
         href="https://github.com/mahfuja5768 
 "
-        className=" hover:text-white duration-300"
+        className="text-primary hover:text-white duration-300"
       >
         <FaGithub />
       </a>

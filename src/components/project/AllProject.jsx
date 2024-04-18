@@ -4,6 +4,7 @@ import { getImgUrl } from "../../utils/getImageUrl";
 import SingleProject from "./SingleProject";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const AllProject = () => {
   const [showPortal, setShowPortal] = useState(false);
@@ -23,11 +24,11 @@ const AllProject = () => {
   return (
     <div>
       <div
-        className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-24
+        className="grid grid-cols-1 md:grid-cols-2 gap-6 md:mt-24 mt-20
       "
       >
         {data?.map((project) => (
-          <a
+          <Link
             onClick={() => handleShowDetails(project?.id)}
             key={project?.id}
             className=" cursor-pointer"
@@ -46,7 +47,7 @@ const AllProject = () => {
               <motion.img
                 src={getImgUrl(project?.img)}
                 whileHover={{ scale: 1.05 }}
-                className="w-full rounded-2xl h-[230px]"
+                className="w-full rounded-2xl h-full md:h-[230px]"
                 alt=""
               />
               <div className="flex items-center justify-between px-3 py-4 pb-5 ">
@@ -59,19 +60,19 @@ const AllProject = () => {
                     href={project?.liveUrl}
                     className=" font-bold"
                   >
-                    <FaExternalLinkAlt className=" hover:text-darkYellow text-lighterYellow" />
+                    <FaExternalLinkAlt className=" hover:text-primary text-primary" />
                   </a>
                   <a
                     target="blank"
                     href={project?.github}
                     className="font-bold"
                   >
-                    <FaGithub className=" hover:text-darkYellow text-lighterYellow" />
+                    <FaGithub className=" hover:text-primary text-primary" />
                   </a>
                 </div>
               </div>
             </motion.div>
-          </a>
+          </Link>
         ))}
       </div>
       {showPortal && (

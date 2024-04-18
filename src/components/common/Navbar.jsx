@@ -5,8 +5,8 @@ const Navbar = ({ page, setPage }) => {
       {navs?.map((item) => (
         <li
           key={item}
-          className={` font-semibold text-[15px] hover:text-lighterYellow  duration-300 ${
-            page === item ? " text-lighterYellow duration-300" : ""
+          className={` font-semibold text-[15px] hover:text-primary  duration-300 ${
+            page === item ? " text-primary duration-300" : ""
           }`}
         >
           <button onClick={() => setPage(item)}>{item}</button>

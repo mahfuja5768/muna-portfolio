@@ -6,7 +6,7 @@ const Loader = () => {
   const wordArray = message.split(" ");
   return (
     <div className=" h-screen bg-[#2a2826] flex justify-center items-center flex-col">
-      <div className="text-2xl md:text-3xl font-bold mb-3 text-lighterYellow text-center">
+      <div className="text-2xl md:text-3xl font-bold mb-3 text-primary text-center">
         {wordArray.map((word, idx) => (
           <motion.span
             key={idx}
@@ -36,7 +36,7 @@ const Loader = () => {
         animate={{ opacity: 1, x: 0 }}
         transition={{ type: "spring", duration: 2 }}
       >
-        <h3 className=" text-darkYellow text-xl md:text-2xl mb-2">
+        <h3 className=" text-primary text-xl md:text-2xl mb-2">
           Wishing you have a good day...
         </h3>
       </motion.div>

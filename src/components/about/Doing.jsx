@@ -11,7 +11,7 @@ const Doing = () => {
       <div className="my-6 grid grid-cols-1 md:grid-cols-2 gap-6">
         <div className="bg-[#242425] px-4 py-8 rounded-2xl border border-[#383838] flex gap-4 items-start">
           <div>
-            <MdDeveloperMode className="text-4xl text-darkYellow" />
+            <MdDeveloperMode className="text-4xl text-primary" />
           </div>
           <div>
             <h2 className="md:text-lg font-bold">Web Development</h2>
@@ -23,7 +23,7 @@ const Doing = () => {
 
         <div className="bg-[#242425] px-4 py-8 rounded-2xl border border-[#383838] flex gap-2 items-start">
           <div>
-            <BsFiletypeHtml className="text-4xl text-darkYellow" />
+            <BsFiletypeHtml className="text-4xl text-primary" />
           </div>
           <div>
             <h2 className="md:text-lg font-bold">PSD To Html</h2>
@@ -33,7 +33,7 @@ const Doing = () => {
 
         <div className="bg-[#242425] px-4 py-8 rounded-2xl border border-[#383838] flex gap-5 items-start">
           <div>
-            <TbReplace className="text-4xl text-darkYellow" />
+            <TbReplace className="text-4xl text-primary" />
           </div>
           <div>
             <h2 className="md:text-lg font-bold">Figma Design Convert</h2>
@@ -45,7 +45,7 @@ const Doing = () => {
 
         <div className="bg-[#242425] px-4 py-8 rounded-2xl border border-[#383838] flex gap-2 items-start">
           <div>
-            <LuReplace className="text-4xl text-darkYellow" />
+            <LuReplace className="text-4xl text-primary" />
           </div>
           <div>
             <h2 className="md:text-lg font-bold">Html To React</h2>

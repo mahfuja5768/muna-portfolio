@@ -10,7 +10,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "95%" }}
-            className="bg-darkYellow h-[7px] rounded-full"
+            className="bg-primary h-[7px] rounded-full"
           ></div>
         </div>
         <div className="rounded shadow-2xl ">
@@ -19,7 +19,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "90%" }}
-            className="bg-darkYellow h-[7px] rounded-full"
+            className="bg-primary h-[7px] rounded-full"
           ></div>
         </div>
         <div className="rounded shadow-2xl ">
@@ -28,7 +28,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "90%" }}
-            className="bg-darkYellow h-[7px] rounded-full"
+            className="bg-primary h-[7px] rounded-full"
           ></div>
         </div>
         <div className="rounded shadow-2xl ">
@@ -37,7 +37,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "90%" }}
-            className="bg-darkYellow h-[7px] rounded-full"
+            className="bg-primary h-[7px] rounded-full"
           ></div>
         </div>
         <div className="rounded shadow-2xl ">
@@ -46,7 +46,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "90%" }}
-            className="bg-darkYellow h-[7px] rounded-full"
+            className="bg-primary h-[7px] rounded-full"
           ></div>
         </div>
         <div className="rounded shadow-2xl ">
@@ -55,7 +55,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "90%" }}
-            className="bg-darkYellow h-[7px] rounded-full"
+            className="bg-primary h-[7px] rounded-full"
           ></div>
         </div>
         <div className="rounded shadow-2xl ">
@@ -64,7 +64,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "95%" }}
-            className="bg-darkYellow h-[7px] rounded-full"
+            className="bg-primary h-[7px] rounded-full"
           ></div>
         </div>
         <div className="rounded shadow-2xl ">
@@ -73,7 +73,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "95%" }}
-            className="bg-darkYellow h-[7px] rounded-full "
+            className="bg-primary h-[7px] rounded-full "
           ></div>
         </div>
         <div className="rounded shadow-2xl ">
@@ -82,7 +82,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "88%" }}
-            className="bg-darkYellow h-[7px] rounded-full"
+            className="bg-primary h-[7px] rounded-full"
           ></div>
         </div>
         <div className="rounded shadow-2xl ">
@@ -91,7 +91,7 @@ const SkillPercent = () => {
           </div>
           <div
             style={{ width: "94%" }}
-            className="bg-darkYellow h-[7px] rounded-full"
+            className="bg-primary h-[7px] rounded-full"
           ></div>
         </div>
       </div>
