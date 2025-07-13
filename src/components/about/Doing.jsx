@@ -14,7 +14,7 @@ const Doing = () => {
             <MdDeveloperMode className="text-4xl text-primary" />
           </div>
           <div>
-            <h2 className="md:text-lg font-bold">Web Development</h2>
+            <h2 className="md:text-lg font-bold">Web Development | Wordpress development</h2>
             <p className="text-[15px] pt-1">
               High-quality development of sites at the professional level.
             </p>

@@ -35,11 +35,11 @@
 }
 
 .project-link:hover {
-  border-color: #9ed5c5;
+  border-color: #ffe6ba;
 }
 
 .icon {
-  color: #9ed5c5;
+  color: #ffe6ba;
   font-size: 1.2rem;
 }
 
@@ -47,7 +47,7 @@
   position: absolute;
   top: 25px;
   right: 20px;
-  border: 1px solid #9ed5c5;
+  border: 1px solid #fff;
   border-radius: 50%;
   width: 40px;
   height: 40px;

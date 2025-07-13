@@ -6,6 +6,15 @@ const SkillPercent = () => {
       <div className="bg-[#202022] p-4 shadow-2xl border border-[#383838] rounded-2xl grid grid-cols-1 gap-6 lg:gap-10 mt-6">
         <div className="rounded shadow-2xl ">
           <div className="flex justify-between items-center py-5">
+            <h4 className="text-lg font-semibold text-white">Wordpress</h4>
+          </div>
+          <div
+            style={{ width: "99%" }}
+            className="bg-primary h-[7px] rounded-full"
+          ></div>
+        </div>
+        <div className="rounded shadow-2xl ">
+          <div className="flex justify-between items-center py-5">
             <h4 className="text-lg font-semibold text-white">React JS</h4>
           </div>
           <div

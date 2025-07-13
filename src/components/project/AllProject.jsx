@@ -28,21 +28,21 @@ const AllProject = () => {
       "
       >
         {data?.map((project) => (
-          <Link
-            onClick={() => handleShowDetails(project?.id)}
+          <motion.div
             key={project?.id}
-            className=" cursor-pointer"
+            className="bg-[#202022] rounded-2xl"
+            initial={{ opacity: 0, y: -50 }}
+            whileInView={{
+              opacity: 1,
+              x: 0,
+              transition: {
+                duration: 1,
+              },
+            }}
           >
-            <motion.div
-              className="bg-[#202022] rounded-2xl"
-              initial={{ opacity: 0, y: -50 }}
-              whileInView={{
-                opacity: 1,
-                x: 0,
-                transition: {
-                  duration: 1,
-                },
-              }}
+            <Link
+              onClick={() => handleShowDetails(project?.id)}
+              className=" cursor-pointer"
             >
               <motion.img
                 src={getImgUrl(project?.img)}
@@ -50,29 +50,32 @@ const AllProject = () => {
                 className="w-full rounded-2xl h-full md:h-[230px]"
                 alt=""
               />
-              <div className="flex items-center justify-between px-3 py-4 pb-5 ">
+            </Link>
+
+            <div className="flex items-center justify-between px-3 py-4 pb-5 ">
+              <Link
+                onClick={() => handleShowDetails(project?.id)}
+                className=" cursor-pointer"
+              >
                 <h3 className="text-lg md:text-2xl font-bold">
                   {project?.title}
                 </h3>
-                <div className=" flex gap-7 justify-between">
-                  <a
-                    target="blank"
-                    href={project?.liveUrl}
-                    className=" font-bold"
-                  >
-                    <FaExternalLinkAlt className=" hover:text-primary text-primary" />
-                  </a>
-                  <a
-                    target="blank"
-                    href={project?.github}
-                    className="font-bold"
-                  >
-                    <FaGithub className=" hover:text-primary text-primary" />
-                  </a>
-                </div>
+              </Link>
+
+              <div className=" flex gap-7 justify-between">
+                <a
+                  target="blank"
+                  href={project?.liveUrl}
+                  className=" font-bold"
+                >
+                  <FaExternalLinkAlt className=" hover:text-primary text-primary" />
+                </a>
+                <a target="blank" href={project?.github} className="font-bold">
+                  <FaGithub className=" hover:text-primary text-primary" />
+                </a>
               </div>
-            </motion.div>
-          </Link>
+            </div>
+          </motion.div>
         ))}
       </div>
       {showPortal && (

@@ -11,9 +11,7 @@ const MyInfo = () => {
         the same time attractive.
         <br />
         <br />
-        Proficient in HTML, CSS, and JavaScript, I am always exploring new
-        frameworks and libraries to stay at the forefront of front-end
-        development trends. I am a strong advocate for clean and maintainable
+        Proficient in HTML, CSS, and JavaScript, Wordpress, Elementor pro. I am always exploring new plugins , themes. I am a strong advocate for clean and maintainable design and 
         code. My aim is to bring across your message and identity in the most
         creative way.
       </p>
